@@ -1,44 +1,19 @@
-
+<div class="box box-solid">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  •	<li *ngFor="let carousel of cars; let i = index" data-target="#carousel-example-generic" [attr.data-slide-to]="i" [class.active]="i == 0"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+                  •	<li *ngFor="let carousel of carouselarray; let i = index" data-target="#carousel-example-generic" [attr.data-slide-to]="i" [class.active]="i == 0">
+                  </li>
+
                 </ol>
                 <div class="carousel-inner">
-                  <div class="item" *ngFor="let carousel of cars; let index = index" [class.active]="index == 0">
+                  <div class="item" *ngFor="let carousel of carouselarray; let index = index" [class.active]="index == 0">
                                 <locatinos-carousel [carousel]="carousel"></locatinos-carousel>
                             </div>
 
-                  <div class="item active">
-                    <img src="../../assets/img/banner/{{`carousel.urlimg`}}" alt="First slide">
 
-                    <div class="carousel-caption">
-                      carousel.titulo
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="../../assets/img/banner/{{`carousel.urlimg`}}" alt="Second slide">
 
-                    <div class="carousel-caption">
-                    carousel.titulo
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="../../assets/img/banner/{{`carousel.urlimg`}}" alt="Third slide">
-
-                    <div class="carousel-caption">
-                      carousel.titulo
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="../../assets/img/banner/{{`carousel.urlimg`}}" alt="Four slide">
-
-                    <div class="carousel-caption">
-                      carousel.titulo
-                    </div>
-                  </div>
 </div>
 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 <span class="fa fa-angle-left"></span>

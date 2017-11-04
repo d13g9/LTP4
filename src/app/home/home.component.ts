@@ -16,10 +16,10 @@ export class HomeComponent implements OnInit {
                   {id:4, titulo : "Hyundai Grandeur",  urlimg:"4.png"}
                 ];
 
-  images:string[] = ["1.png",
+  /*images:string[] = ["1.png",
                       "2.png",
                       "3.png",
-                      "4.png"];
+                      "4.png"];*/
 
   constructor() { }
 

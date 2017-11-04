@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
     title = "Locatinos";
     urllogo = "../../assets/img/logo.jpg";
 
+
   constructor() { }
 
   ngOnInit() {
